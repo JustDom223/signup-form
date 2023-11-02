@@ -1,12 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    border: 1px black;
-    border-style: solid;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #383838;
+}
+
 .signUpPage{
+    border: 1px black;
+    border-style: solid;
     display: flex;
     width: 50%;
     height: 100vh;
@@ -15,16 +19,37 @@
 
 /* Left */
 .leftSide{
+    display: flex;
     position: relative;
     overflow: clip;
-    width: 70%;
+    width: 100%;
+
 }
 
 .bgImg{
     position: absolute;
     max-height: 100%;
+    z-index: 1;
 }
 
+.logoBanner{
+    display: flex;
+    z-index: 2;
+    background-color: rgb(0 0 0 /.6);
+    height: 10vw;
+    margin-top: 200px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logoBanner h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 /* Right */
@@ -32,11 +57,51 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-    /* gap: 0.5rem; */
+    background-color: rgb(236, 236, 236);
 }
-
 .container{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
     aspect-ratio: 1/1;
     flex-grow: 1;
 }
+
+.topRight{
+
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    
+}
+.topRight p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.middle{
+    box-shadow: 0px 3px 5px #888, 0px 0px 0px #888;
+}
+
+.middle h4{
+    padding: 20px 0px 0px 20px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputRow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+
