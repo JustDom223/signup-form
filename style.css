@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 1px black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.signUpPage{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+
+/* Left */
+.leftSide{
+    position: relative;
+    overflow: clip;
+    width: 70%;
+}
+
+.bgImg{
+    position: absolute;
+    max-height: 100%;
+}
+
+
+
+/* Right */
+.rightSide{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+}
+
+.container{
+    background-color: red;
+    aspect-ratio: 1/1;
+    flex-grow: 1;
+}
