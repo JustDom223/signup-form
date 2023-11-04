@@ -64,6 +64,7 @@ body{
     flex-direction: column;
     aspect-ratio: 1/1;
     flex-grow: 1;
+    /* padding: 20px; */
 }
 
 .topRight{
@@ -105,3 +106,18 @@ form{
     width: 100%;
 }
 
+.bottomRight{
+    padding: 20px;
+}
+
+
+
+.accountButton{
+    background-color: #596D48;
+    height: 30px;
+    width: 130px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
