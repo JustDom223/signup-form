@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+/* @font-face {
+    font-family: "CustomFont";
+    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    }
+    
+     */
+
 body{
     background-color: #383838;
+    font-family: 'Poppins', sans-serif;
 }
 
 .signUpPage{
@@ -96,11 +107,34 @@ form{
 .inputContainer{
     display: flex;
     flex-direction: column;
+    /* border: none; */
+}
+
+.info{
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+}
+.info:focus{
+    /* border: 10px solid #3e7af1; */
+    outline: solid 1px  #2540d8;
+    box-shadow: 0 0 10px #719ECE;
+}
+.info:valid{
+    outline: solid 1px  #26b809;
+    background-color: #bbffae;
+    
+}
+
+.info:invalid{
+    outline: solid 1px  red;
+    background-color: rgb(253, 231, 231);
+
 }
 
 .inputRow{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
     width: 100%;
@@ -109,8 +143,6 @@ form{
 .bottomRight{
     padding: 20px;
 }
-
-
 
 .accountButton{
     background-color: #596D48;
