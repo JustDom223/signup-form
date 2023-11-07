@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
-    font-family: "CustomFont";
-    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
-    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
-    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
-    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+@font-face {
+    font-family: "norse";
+    src: url(./fonts/norse-bold-webfont.woff);
     }
     
-     */
+    
 
 body{
     background-color: #383838;
@@ -56,6 +53,7 @@ body{
 
 .logoBanner h1{
     display: flex;
+    font-family: "norse";
     align-items: center;
     color: white;
     text-align: center;
@@ -120,11 +118,11 @@ form{
     outline: solid 1px  #2540d8;
     box-shadow: 0 0 10px #719ECE;
 }
-.info:valid{
+/* .info:valid{
     outline: solid 1px  #26b809;
     background-color: #bbffae;
     
-}
+} */
 
 .info:invalid{
     outline: solid 1px  red;
